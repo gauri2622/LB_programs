@@ -1,0 +1,47 @@
+//program20.c
+#include<stdio.h>
+ 
+ void DisplayClass(float fMarks)
+ {
+
+    if ((fMarks<0.00) || (fMarks> 100.00))
+    {
+        printf(" invalid marks..\n");
+    }
+
+
+if((fMarks >=0) && (fMarks < 35.00))
+{
+    printf(" You Are fail\n");
+}
+else if((fMarks >= 35.00) && (fMarks < 50.00))
+{
+  printf("Your class is Pass class...\n ");
+}
+else if((fMarks >= 50) &&(fMarks < 60.00))
+{
+  printf("Your class second class...\n");
+}
+else if((fMarks >= 60)&&(fMarks < 75.00))
+{
+  printf(" Your class is First class...\n");
+
+}
+else if ((fMarks >= 75)&&(fMarks < 100.00))
+{
+    printf("Your class is First class with Distinction...\n");
+}
+}
+
+int main()
+
+{
+
+  float fValue=0.0f;
+
+  printf("enter your percentage:\n");
+  scanf("%f",&fValue);
+
+  DisplayClass (fValue);
+    return 0;
+}
